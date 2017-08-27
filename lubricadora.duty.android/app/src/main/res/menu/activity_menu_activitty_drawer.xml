@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_directions_car_yellow_900_24dp"
+            android:title="Vehiculos" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/ic_favorite_orange_800_24dp"
+            android:title="Tips" />
+        <item
+            android:id="@+id/nav_promociones"
+            android:icon="@drawable/ic_stars_red_700_24dp"
+            android:title="Pomociones" />
+
+
+    </group>
+
+    <item android:title="Comunicate">
+        <menu>
+            <item
+                android:id="@+id/nav_nosotros"
+                android:icon="@drawable/ic_supervisor_account_orange_a700_24dp"
+                android:title="Quienes Somos" />
+            />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_place_yellow_900_24dp"
+                android:title="Ubicaciòn" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_close_yellow_900_24dp"
+                android:title="Cerrar sesión" />
+
+        </menu>
+    </item>
+
+</menu>

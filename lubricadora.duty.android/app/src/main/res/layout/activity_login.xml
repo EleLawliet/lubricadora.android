@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:src="@drawable/image_login"
+            />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0.16" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/btn_padding"
+    android:paddingBottom="@dimen/btn_padding"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Por favor, ingresa tu número de cédula."
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/sub_welcome"
+        android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verificarémos tu cédula."
+            android:textSize="20sp"
+            android:textColor="#515151"
+            android:gravity="center"
+            android:id="@+id/welcome"
+           />
+
+
+
+</LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cedula"
+                android:hint="CI"
+                android:inputType="numberPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/request"
+        android:background="@drawable/boton_redondeado_rojo"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:text="Consultar"
+        android:theme="@style/myLoginButon"
+        android:layout_gravity="right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UBICANOS"
+            android:gravity="center"
+            android:id="@+id/sigup"
+            android:layout_weight="0.5"
+            android:drawableBottom="@drawable/ic_room_blue_800_24dp" />
+        <View
+            android:layout_width="1.5dp"
+            android:background="@color/brown_900"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PROMOCIONES"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:id="@+id/promos"
+            android:drawableBottom="@drawable/ic_stars_red_700_24dp" />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:id="@+id/info"/>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main_1_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/main_card_margin_vertical"
+    android:layout_marginStart="@dimen/main_card_margin_horizontal"
+    android:layout_marginEnd="@dimen/main_card_margin_horizontal"
+    android:layout_marginTop="@dimen/main_card_margin_vertical"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    card_view:cardElevation="@dimen/card_recycler_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/container_vehicles"
+            android:orientation="vertical"
+            android:background="@color/cyan_700"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/img_main_card_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/posible_imagen_del_tipo_de_vehiculo_que_posee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/container_vehicles_info"
+                android:layout_below="@+id/img_main_card_1"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/tv_card_brand"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/card_title_margin"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="@string/brand"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tv_card_color"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/card_title_margin"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="@string/color"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_card_placa"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/card_title_margin"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="@string/placa"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_card_vehicle_class"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_class"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/card_button_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+             />
+        <TextView
+            android:id="@+id/tv_card_vehicle_descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:text="@string/vehicle_description" />
+
+        <Button
+            android:id="@+id/btn_card_services"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_services"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="@dimen/card_button_margin"
+            android:layout_marginRight="@dimen/card_button_margin"
+            />
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
